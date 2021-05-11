@@ -1,6 +1,6 @@
 @echo off
 echo ----------------------------------------------------------------------------------------
-echo  Open SSL Based SSL Certificate Extractor For Windows x64 - For SSL Domains(Port 443)
+echo  Open SSL Based SSL Certificate Extractor For Windows x64 - For HTTPS Domains(Port 443)
 echo ----------------------------------------------------------------------------------------
 echo. 
 echo  1. Please specify the hostname. Eg. google.com
@@ -15,7 +15,7 @@ echo.
 echo ----------------------------------------------------------------------------------------
 ::---------------------------------------------------------------
 :get_hostname
-set /p hostname=Specify the hostname:
+set /p hostname=Specify the hostname: 
 ::---------------------------------------------------------------
 :: check hostname
 if "%hostname%"=="" (
@@ -26,7 +26,7 @@ if "%hostname%"=="" (
 ::---------------------------------------------------------------
 :get_format
 echo.
-set /p format=Specify the export format(Default=CER):
+set /p format=Specify the export format(Default=CER): 
 ::---------------------------------------------------------------
 ::set default format
 if "%format%"=="" (
@@ -66,6 +66,9 @@ if "%format%"=="PEM" (
 :: ssl extraction usin open ssl
 :: Usage of "Q" to immediately exit the interactive session after command execution(Refer following link)
 :: https://stackoverflow.com/questions/25760596/how-to-terminate-openssl-s-client-after-connection
+echo.
+echo Retrieving and exporting the SSL certificate...
 echo "Q" | openssl s_client -connect %hostname%:443 2>nul | openssl x509 -outform %format% >%hostname%.%ext%
+timeout 2 >nul
 
 @echo on
