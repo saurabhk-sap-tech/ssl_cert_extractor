@@ -1,4 +1,4 @@
-# ssl_extractor
+# ssl_cert_extractor
 ### Open SSL based SSL Cert. Extractor for Windows x64<br/>
 
 **References** <br/>
