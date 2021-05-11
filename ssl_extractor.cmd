@@ -67,7 +67,7 @@ if "%format%"=="PEM" (
 :: Usage of "Q" to immediately exit the interactive session after command execution(Refer following link)
 :: https://stackoverflow.com/questions/25760596/how-to-terminate-openssl-s-client-after-connection
 echo.
-echo Retrieving and exporting the SSL certificate...
+echo Retrieving and exporting %hostname%.%ext%...
 echo "Q" | openssl s_client -connect %hostname%:443 2>nul | openssl x509 -outform %format% >%hostname%.%ext%
 timeout 2 >nul
 
