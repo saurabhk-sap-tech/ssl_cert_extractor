@@ -1,6 +1,21 @@
 # ssl_cert_extractor
 ### Open SSL based SSL Cert. Extractor for Windows x64<br/>
 
+**Important** <br/>
+_OpenSSL is required_ <br/><br/>
+**Installer for windows:** <br/>
+https://slproweb.com/products/Win32OpenSSL.html <br/>
+This is where the existing openssl installer in the repo is downloaded from <br/><br/>
+**Portable prebuilt binaries for windows:** <br/>
+https://github.com/openssl/openssl/wiki/Binaries <br/>
+https://github.com/IndySockets/OpenSSL-Binaries/tree/master/openssl-3_x <br/>
+**https://www.firedaemon.com/get-openssl** <br/>
+
+**_Installation & Execution Instructions_** <br/>
+OpenSSL 3.5.0 binary ZIP from firedaemon is uploaded to the repo. <br/>
+Extract it to you local computer and copy the ssl extractor script to x64 >> bin >> (This is where openssl binary is located) <br/>
+Then execute the script in that folder and follow the prompts. CER file will be downloaded to the same folder
+
 **References** <br/>
 https://www.openssl.org/ <br/>
 https://slproweb.com/products/Win32OpenSSL.html <br/>
