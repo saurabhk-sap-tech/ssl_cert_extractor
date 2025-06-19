@@ -12,7 +12,8 @@ https://github.com/IndySockets/OpenSSL-Binaries/tree/master/openssl-3_x <br/>
 **https://www.firedaemon.com/get-openssl** <br/>
 
 **_Installation & Execution Instructions_** <br/>
-OpenSSL 3.5.0 binary ZIP from firedaemon is uploaded to the repo. <br/>
+OpenSSL 3.5.0 binary ZIP from firedaemon is uploaded to onedrive: <br/>
+https://1drv.ms/u/c/5df3e0bd012f18e8/EWAkiXIfHsNKnoyyeD2UoDkBcIfImrTXidgwq19WIWWYPw <br/>
 Extract it to you local computer and copy the ssl extractor script to x64 >> bin >> (This is where openssl binary is located) <br/>
 Then execute the script in that folder and follow the prompts. CER file will be downloaded to the same folder
 
