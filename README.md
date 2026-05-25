@@ -10,6 +10,7 @@ This is where the existing openssl installer in the repo is downloaded from <br/
 https://github.com/openssl/openssl/wiki/Binaries <br/>
 https://github.com/IndySockets/OpenSSL-Binaries/tree/master/openssl-3_x <br/>
 **https://www.firedaemon.com/get-openssl** <br/>
+**https://www.firedaemon.com/download-firedaemon-openssl** <br/>
 
 **_Installation & Execution Instructions_** <br/>
 OpenSSL 3.5.0 binary ZIP from firedaemon is uploaded to onedrive: <br/>
